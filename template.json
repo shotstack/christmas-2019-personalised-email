@@ -1,0 +1,145 @@
+{
+    "timeline": {
+        "fonts": [
+            {
+                "src": "https://shotstack-pubic-files.s3-ap-southeast-2.amazonaws.com/christmas/MountainsofChristmas-Regular.ttf"
+            },
+            {
+                "src": "https://shotstack-pubic-files.s3-ap-southeast-2.amazonaws.com/christmas/MountainsofChristmas-Bold.ttf"
+            }
+        ],
+        "background": "#000000",
+        "tracks": [
+            {
+                "clips": [
+                    {
+                        "asset": {
+                            "type": "html",
+                            "html": "<p>Happy Holidays</p>",
+                            "css": "p { font-family: \"Mountains of Christmas\"; color: #ffffff; font-size: 36px; text-align: center; }",
+                            "width": 600,
+                            "height": 400,
+                            "background": "transparent"
+                        },
+                        "start": 2,
+                        "length": 9,
+                        "transition": {
+                            "in": "fade",
+                            "out": "fade"
+                        },
+                        "position": "center",
+                        "offset": {
+                        	"y": 0.09
+                        }
+                    },
+                    {
+                        "asset": {
+                            "type": "html",
+                            "html": "<p>{{FIRST_NAME}}</p>",
+                            "css": "p { font-family: \"Mountains of Christmas\"; font-weight: bold; color: #ffffff; font-size: 56px; text-align: center; }",
+                            "width": 600,
+                            "height": 400,
+                            "background": "transparent"
+                        },
+                        "start": 3,
+                        "length": 8,
+                        "transition": {
+                            "in": "fade",
+                            "out": "fade"
+                        },
+                        "position": "center"
+                    },
+                    {
+                        "asset": {
+                            "type": "html",
+                            "html": "<p>And Best Wishes For</p>",
+                            "css": "p { font-family: \"Mountains of Christmas\"; color: #ffffff; font-size: 36px; text-align: center; }",
+                            "width": 600,
+                            "height": 400,
+                            "background": "transparent"
+                        },
+                        "start": 11.5,
+                        "length": 7,
+                        "transition": {
+                            "in": "fade",
+                            "out": "fade"
+                        },
+                        "position": "center",
+                        "offset": {
+                        	"y": 0.09
+                        }
+                    },
+                    {
+                        "asset": {
+                            "type": "html",
+                            "html": "<p>2020</p>",
+                            "css": "p { font-family: \"Mountains of Christmas\"; font-weight: bold; color: #ffffff; font-size: 74px; text-align: center; }",
+                            "width": 600,
+                            "height": 400,
+                            "background": "transparent"
+                        },
+                        "start": 12.5,
+                        "length": 6,
+                        "transition": {
+                            "in": "fade",
+                            "out": "fade"
+                        },
+                        "position": "center"
+                    },
+                    {
+                        "asset": {
+                            "type": "html",
+                            "html": "<p>From the Team at</p>",
+                            "css": "p { font-family: \"Mountains of Christmas\"; color: #ffffff; font-size: 36px; text-align: center; }",
+                            "width": 600,
+                            "height": 400,
+                            "background": "transparent"
+                        },
+                        "start": 18,
+                        "length": 6,
+                        "transition": {
+                            "in": "fade"
+                        },
+                        "position": "center",
+                        "offset": {
+                        	"y": 0.09
+                        }
+                    },
+                    {
+                        "asset": {
+                            "type": "html",
+                            "html": "<p>SHOTSTACK</p>",
+                            "css": "p { font-family: \"Mountains of Christmas\"; font-weight: bold; color: #ffffff; font-size: 56px; text-align: center; }",
+                            "width": 600,
+                            "height": 400,
+                            "background": "transparent"
+                        },
+                        "start": 19,
+                        "length": 5,
+                        "position": "center",
+                        "transition": {
+                            "in": "fade"
+                        }
+                    }
+                ]
+            },
+            {
+                "clips": [
+                    {
+                        "asset": {
+                            "type": "video",
+                            "src": "https://shotstack-pubic-files.s3-ap-southeast-2.amazonaws.com/christmas/christmas.mp4",
+                            "volume": 1
+                        },
+                        "start": 0,
+                        "length": 24
+                    }
+                ]
+            }
+        ]
+    },
+    "output": {
+        "format": "mp4",
+        "resolution": "sd"
+    }
+}
