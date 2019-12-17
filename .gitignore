@@ -1,3 +1,4 @@
 node_modules
-
-src/user-list.csv
+.env
+user-list.csv
+mailing-list.csv
