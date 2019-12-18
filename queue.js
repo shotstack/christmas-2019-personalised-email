@@ -18,8 +18,6 @@ const fileStream = fs.createWriteStream(MAILING_LIST, { flags: 'a' });
 
 let count = 0;
 
-console.log(LIMIT);
-
 fs.createReadStream(USER_LIST)
     .pipe(csv.parse())
     .on('data', row => {
