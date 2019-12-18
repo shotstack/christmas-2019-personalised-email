@@ -13,7 +13,7 @@ const CUSTOMER_ID = process.env.SHOTSTACK_CUSTOMER_ID;
 const PREVIEW_URL = process.env.SHOTSTACK_PREVIEW_URL;
 const TEMPLATE = fs.readFileSync('./template.json', 'utf8');
 const SKIP = argv.skip || 0;
-const LIMIT = Math.max(argv.limit, 20);
+const LIMIT = Math.min(argv.limit, 20);
 const fileStream = fs.createWriteStream(MAILING_LIST, { flags: 'a' });
 
 let count = 0;
@@ -45,7 +45,7 @@ fs.createReadStream(USER_LIST)
             }
 
             if (res.statusCode !== 201) {
-                console.log(row[0], body.response.message);
+                console.log(row[0], body);
                 return;
             }
 
