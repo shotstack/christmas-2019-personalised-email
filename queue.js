@@ -28,7 +28,7 @@ fs.createReadStream(USER_LIST)
         }
 
         let template = JSON.parse(
-            JSON.stringify(TEMPLATE).replace('{{FIRST_NAME}}', row[1])
+            JSON.stringify(TEMPLATE).replace('{{FIRST_NAME}}', row[1].toUpperCase())
         );
 
         request({
@@ -51,5 +51,6 @@ fs.createReadStream(USER_LIST)
 
             let video = body.response.id + '.mp4';
             fileStream.write(`${row[0]},${row[1]},${video},${PREVIEW_URL}${CUSTOMER_ID}/${video}\n`);
+            console.log('Video queued for: ' + row[0]);
         });
     });
