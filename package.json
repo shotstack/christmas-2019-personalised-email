@@ -4,13 +4,15 @@
   "description": "A personalised christmas video example",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "queue": "node queue.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^8.2.0",
     "fast-csv": "^3.6.0",
-    "request": "^2.88.0"
+    "request": "^2.88.0",
+    "yargs": "^15.0.2"
   }
 }

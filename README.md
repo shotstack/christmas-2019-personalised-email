@@ -34,11 +34,29 @@ mv user-list.dist.csv user-list.csv
 
 ## Usage
 
-Once your list is prepared run the **queue.js** script to personalise the template and POST the edit to the Shotstack API.
+Once your list is prepared run the **queue.js** script to personalise the template and POST the edit to the Shotstack API:
 
-The users name, email, video file name and a preview URL will be written to **mailing-list.csv** which can be used in a mail merge email service like Mailchimp.
+```
+npm run queue
+```
 
-You can also view the videos once they are rendered using the preview URL.
+The script will limit the number of videos that can be queued at one time to a maximum of 20, to work through a mailing list
+you should set a **--skip** argument to skip through records in the CSV file and you can override the default number of records
+to queue using the **--limit** argument.
+
+To skip the first 20 records and queue the next 20:
+```
+npm run queue -- --skip 20
+```
+
+To skip the first 40 records and queue the next 10:
+```
+npm run queue -- --skip 40 --limit 10
+```
+
+As videos are queued the users name, email, video file name and a preview URL will be written to **mailing-list.csv** which can be used in a mail merge email service like Mailchimp.
+
+You can also view the videos once they are rendered using the preview URL written to the file.
 
 **Notes:**
 - This is an example only, using this on large lists will quickly be throttled and rate limited. You should build your own batching and throttling if you wish to use this at scale.
