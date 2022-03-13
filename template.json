@@ -2,10 +2,10 @@
     "timeline": {
         "fonts": [
             {
-                "src": "https://shotstack-pubic-files.s3-ap-southeast-2.amazonaws.com/christmas/MountainsofChristmas-Regular.ttf"
+                "src": "https://shotstack-assets.s3.ap-southeast-2.amazonaws.com/fonts/MountainsofChristmas-Regular.ttf"
             },
             {
-                "src": "https://shotstack-pubic-files.s3-ap-southeast-2.amazonaws.com/christmas/MountainsofChristmas-Bold.ttf"
+                "src": "https://shotstack-assets.s3.ap-southeast-2.amazonaws.com/fonts/MountainsofChristmas-Bold.ttf"
             }
         ],
         "background": "#000000",
@@ -128,7 +128,7 @@
                     {
                         "asset": {
                             "type": "video",
-                            "src": "https://shotstack-pubic-files.s3-ap-southeast-2.amazonaws.com/christmas/christmas.mp4",
+                            "src": "https://shotstack-assets.s3.ap-southeast-2.amazonaws.com/examples/christmas.mp4",
                             "volume": 1
                         },
                         "start": 0,
